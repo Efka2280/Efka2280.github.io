@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-Y: hidden; /* Menghilangkan scroll horizontal pada body */
+    background-color: rgb(242, 246, 247);
+}
+
+button{
+    padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+
+}
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+
+
+.container {
+    width: 100vw; /* Lebar 100% dari viewport */
+    white-space: nowrap; /* Tidak mengizinkan wrap untuk mengatur konten horizontal */
+    overflow-x: auto; /* Munculkan scroll horizontal saat konten lebih lebar dari viewport */
+    overflow-y: hidden; /* Sembunyikan scroll vertikal */
+}
+
+.content {
+    display: inline-block; /* Konten diatur berjajar secara horizontal */
+    white-space: normal; /* Kembalikan wrap normal */
+   margin: 0;
+}
+
+.profile{
+    height: 99.612829vh;
+    width: 35vw;
+    background-color: rgb(131, 131, 131);
+    background-image: url('gambar/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+
+}
+
+.profile:hover{
+    background-image: url('gambar/color.jpg');
+    transform: scale(1.02);
+}
+
+.isi{
+    background-color: rgb(242, 246, 247);;
+    margin: 0px;
+    height: 99.9vh;
+    width: 61vw;
+    
+}
+
+
+#a{
+    position: absolute;
+    top: 0px;
+    left: 35vw;
+}
+
+#a p {
+    position: relative;
+    top: 0px;
+    margin: 30px;
+}
+#a h2 {
+    position: relative;
+    top: 30px;
+    margin: 20px;
+}
+
+h1, h2, h3, p, button {
+    margin: 20px;
+}
+
+
+#a button{
+    position: absolute;
+    bottom:60px;
+    
+}
+
+
+
+#b{
+    position: absolute;
+    
+    top: 0px;
+    left: 99vw;
+    width: 96vw;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+     border-radius: 10px;
+}
+
+ /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(114, 114, 114, 0.364); 
+      border-radius: 10px;
+      position: relative;
+      top: 7px;
+}   
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #2c2c2c6b; 
+}
+
+#skil{
+    border: 2px solid rgb(31, 31, 31);
+    width: 25vw;
+    height: 80vh;
+    border-radius: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+    position: absolute;
+    right: 6vw;
+}
+
+.box{
+    border: 2px solid black;
+    margin: 5px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 0.5s;
+}
+
+.box:hover{
+    background-color: rgb(170, 170, 170);
+    color: white;
+}
+
+iframe{
+    position: absolute;
+    width: 55vw;
+    height: 80vh;
+    border-radius: 10px;
+    left: 6vw;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.hitam{
+    margin: 0px;
+    background-color: rgb(242, 246, 247);
+
+    height: 50%;
+    width: 100%;
+}
+
+.hitam img{
+    width: 35%;
+    margin: 10px;
+}

@@ -1,0 +1,30 @@
+body {
+    font-size: 35px; /* Ukuran font dasar */
+}
+
+/* Menggunakan faktor skala untuk memperbesar ukuran font */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px; /* Ukuran font diperbesar pada layar yang lebih besar */
+    }
+}
+
+
+
+/* Contoh: Memperbesar ukuran font untuk elemen h1 */
+h1 {
+    font-size: 2.5em; /* Ukuran font untuk h1 menjadi dua kali ukuran font dasar */
+}
+
+/* Contoh: Memperbesar ukuran font untuk elemen h2 */
+h2 {
+    font-size: 2em; /* Ukuran font untuk h2 menjadi satu setengah kali ukuran font dasar */
+    
+}
+
+/* Contoh: Memperbesar ukuran font untuk elemen p */
+p {
+    font-size: 1.5em; /* Ukuran font untuk paragraf sedikit lebih besar dari font dasar */
+    text-align: justify;
+}
+
