@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+        
+        <style>
+            #cc{
+                border: 3px solid black;
+                
+            }
+            p{
+                color: grey;
+                font-size: 2;
+            }
+            #kart{
+                position: absolute;
+                left:10px;
+                opacity: 50%;
+                
+            }
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        
+       
+        ax² + bx + c = 0
+        <br>masukkan input berupa angka (int)
+        <br> a
+        <input  name="a" id="a" value="1" />
+        
+        <br>b
+        <input id="b" value="0"/>
+        
+        <br>c
+        <input id= "c" value="0" /> 
+        
+        <br><br>
+         <img id="kart" src="kartesius.png" width="500px" height="500px" />
+        
+        <canvas id="cc" width="500px" height="500px">
+            
+        </canvas>
+        
+        
+        <script>
+        
+        
+          var x = -8
+          var a1 = document.getElementById("a")
+          var b1 = document.getElementById("b")
+          var c1 = document.getElementById("c")
+          var yi = "error"
+          
+          const cc = document.getElementById("cc")
+          
+                        //canvas
+              const ca = cc.getContext('2d')
+              ca.lineWidth = 3
+              ca.strokeStyle = 'red'
+              ca.beginPath();
+            
+          
+          var a = Number(a1.value);
+          var b = Number(b1.value);
+          var c = Number(c1.value);
+          var execute = true
+          
+          setInterval(function() {
+
+           
+             
+             var a = Number(a1.value);
+          var b = Number(b1.value);
+          var c = Number(c1.value);
+              
+              if(x >= 8){
+                  x = -8
+                 
+                  ca.beginPath()
+                //  x += 200
+              }
+                  x+=0.25
+                  
+                  var y = (a*x**2 + b*x + c);
+                  console.log(x +","+ y)
+                
+                ca.lineTo((x*31.25)+250,(y*-31.25)+250)
+            
+                ca.stroke()
+              
+               
+          }, 0.25);
+          
+          setInterval(function(){
+              ca.clearRect(0,0 ,500,500)
+              ca.beginPath()
+             console.clear()
+          }, 1000)
+          
+          //titik potong dengan sumbu x
+
+         
+        </script>
+            
+            
+    </body>
+</html>
