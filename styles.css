@@ -1,0 +1,107 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ddd;
+}
+
+p{
+    text-indent: 30px
+}
+a{
+    color: rgb(0, 178, 190);
+}
+
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: #333;
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+   
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+section#skills {
+    padding: 2em;
+    max-width: 1080px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.skill {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #001518;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: justify;
+
+}
+.skil:hover{
+    background-color: #000000;
+}
+
+.skill h3 {
+    margin-top: 0;
+    color: #707070;
+}
+
+
+footer {
+    text-align: center;
+    height: 100px;
+    background-color: #000000;
+    color: #fff;
+
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 799px) {
+    #yangkedua{
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dua kolom, masing-masing 1fr */
+        gap: 10px; /* Jarak antara div */
+        padding: 10px;
+    }
+    .box {
+        padding: 20px;
+        color: white;
+    }
+    iframe{
+        height: 250px;
+        border-radius: 5px;
+    }
+}
